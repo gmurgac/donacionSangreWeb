@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Gonzalo Murga">
+	<meta name="descríption" content="Web, banco de sangre, evaluacion, html, css">
+	<title>Banco de Sangre Alucard</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css"  media=""/>
+</head>
+<body>
+	<!--  HEADER  -->
+	
+	<header>	
+				<div class="fila">
+					<div class="column-3-lg column-6-xs column-3-md column-3-sm">
+							<a href="#">
+								<div class="button">
+									Inicio
+								</div>
+							</a>
+						</div>
+						<div class="column-3-lg column-6-xs column-3-md column-3-sm"><a href="#">
+								<div class="button">
+									Servicios
+								</div>
+							</a></div>
+						<div class="column-3-lg column-6-xs column-3-md column-3-sm"><a href="#">
+								<div class="button">
+									Contacto
+								</div>
+							</a></div>
+						<div class="column-3-lg column-6-xs column-3-md column-3-sm"><a href="#">
+								<div class="button">
+									Nosotros
+								</div>
+							</a></div>
+				</div>
+	</header>
+
+<!-- BANNER -->
+
+	<div id="banner" class="contenedor">
+		<div class="fila">
+			<div class="column-12-lg column-12-md column-12-xs column-12-sm">
+
+					
+				
+							<img src="img/dona.jpg" />
+				</div>
+
+					
+				
+			</div>
+		</div>
+	
+
+<!-- FORMULARIO SUSCRIPCION -->
+
+	<div id="contacto" class="contenedor">
+		<div class="fila">
+			<div class="column-3-lg  column-3-md column-3-sm"></div>
+			<div class="column-6-lg column-12-xs column-6-sm column-6-md"><h3>Subscríbete y Dona</h3></div>
+			</div>
+		<div class="fila">
+			<div class="column-2-lg column-2-sm column-2-md"></div>
+			<div id="formulario" class="column-8-lg column-12-xs column-8-sm column-8-md">
+				<form name="suscrip-form" onsubmit="return validarFormulario()" method="post">
+					<ul>
+						<li>
+							<label for="nombre-txt">Alias</label><br>
+							<input onkeypress="return checkTexto(event)" title="Ingrese un Alias, sólo letras y numeros" type="text" name="nombre-txt" placeholder="Ironman89">
+						</li>
+						<li>
+							<label>Email</label><br>
+							<input onkeypress="return checkEmail(event)" title="Ingrese su email" type="email" name="email-txt" placeholder="example@email.com">
+						</li>
+						<li>
+							<label>Teléfono</label><br>
+							<input onkeypress="return checkNumero(event) "title="Ingrese un numero telefonico" type="phone" name="fono-txt" placeholder="99111119">
+						</li>
+						<li>
+							<input id="btn-sub" type="submit" value="Subscribir"/>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<!-- SECCION NOTICIAS -->
+
+
+	<div id="titulo-noticias" class="contenedor">
+		<div class="fila">
+			<div class="column-12-lg column-12-xs column-12-sm column-12-md"><h3>Noticias</h3></div>
+		</div>
+	</div>
+	<div id="noticias" class="contenedor">
+		
+		<div class="fila">
+			<div class="column-12-lg column-12-xs column-12-sm column-12-md"><img src="https://www.latercera.com/resizer/DDi5liHLrABrKPw2RS2aHeOtsAU=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/FJYWALZ37NFPLEWBZZMIW7R2RU.jpg" /><p>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. At praesentium fuga asperiores doloremque neque tempore iusto ex ipsum iste doloribus voluptatem, excepturi recusandae quia quidem facere odio, nulla quis commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aliquam autem distinctio, quibusdam illo ad accusantium officia nihil fugit cum corrupti perspiciatis a explicabo excepturi aut. Cumque optio id tempora.</p>
+		</div>
+		</div>
+		<hr>
+
+		<div class="fila">
+			<div class="column-12-lg column-12-xs column-12-sm column-12-md"><img src="https://www.latercera.com/resizer/DDi5liHLrABrKPw2RS2aHeOtsAU=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/FJYWALZ37NFPLEWBZZMIW7R2RU.jpg" /><p>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. At praesentium fuga asperiores doloremque neque tempore iusto ex ipsum iste doloribus voluptatem, excepturi recusandae quia quidem facere odio, nulla quis commodi. Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Veritatis quidem vitae velit dolores fugit, quibusdam, labore ex sequi earum necessitatibus assumenda natus. Voluptatibus nobis dicta, animi dolor facere magnam, nesciunt.	</p>
+		</div>
+		</div>
+<hr>
+		<div class="fila">
+			<div class="column-12-lg column-12-xs column-12-sm column-12-md"><img src="https://www.latercera.com/resizer/DDi5liHLrABrKPw2RS2aHeOtsAU=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/FJYWALZ37NFPLEWBZZMIW7R2RU.jpg" /><p>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. At praesentium fuga asperiores doloremque neque tempore iusto ex ipsum iste doloribus voluptatem, excepturi recusandae quia quidem facere odio, nulla quis.	Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Iste rerum adipisci itaque explicabo reprehenderit blanditiis natus ipsam! Alias natus molestiae, tempore autem quis voluptate. Perspiciatis soluta deserunt cumque delectus corrupti.
+			Beatae sunt magni quae, debitis minus, voluptate saepe quo doloremque reprehenderit a, iste quaerat accusamus, laboriosam perferendis? Vero in magni sit, architecto minus soluta, ipsa labore dicta minima praesentium totam.
+			Illo voluptates, amet minima culpa praesentium, voluptate doloribus fuga facilis corporis neque architecto voluptatum maxime sed tenetur doloremque aspernatur velit consectetur ullam obcaecati explicabo labore quod. Sequi, recusandae. Officiis, maiores!
+		</div>
+		</div>
+<hr>
+		<div class="fila">
+			<div class="column-12-lg column-12-xs column-12-sm column-12-md"><img src="https://www.latercera.com/resizer/DDi5liHLrABrKPw2RS2aHeOtsAU=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/FJYWALZ37NFPLEWBZZMIW7R2RU.jpg" /><p>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. At praesentium fuga asperiores doloremque neque tempore iusto ex ipsum iste doloribus voluptatem, excepturi recusandae quia quidem facere odio, nulla quis commodi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, minus? Laborum sapiente sed, rem doloribus error blanditiis molestiae, corrupti quod at tempore rerum totam porro, nulla nobis magni veniam quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, vitae unde et repudiandae odio alias aperiam assumenda hic rem necessitatibus aspernatur libero architecto temporibus veniam dicta consectetur quasi dolorum ex!</p>
+		</div>
+		</div>
+		
+<hr>
+		
+		
+
+	</div>
+		
+		<!-- FOOTER-->
+		
+
+		<footer class="contenedor">
+		<div class="fila">
+			<div class="column-12-lg column-12-xs column-12-sm column-12-md"><h3>Redes Sociales</h3></div>
+		</div>
+		<div class="fila">
+			<a href="https://www.facebook.com">
+			<div class="column-4-lg column-12-xs column-4-sm column-4-md"><center><img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0zMCAxMGg0NTJjMTEgMCAyMCA5IDIwIDIwdjQ1MmMwIDExLTkgMjAtMjAgMjBoLTEzMC44Mzk4NDR2LTE4Ny43ODkwNjJoNjUuMjk2ODc1bDEwLjEyNS03Ni45Mzc1aC03NS40MjE4NzV2LTY2LjgxNjQwN2MwLTQuMzAwNzgxIDMuNzk2ODc1LTguMDk3NjU2IDguMTAxNTYzLTguMDk3NjU2aDY3LjMyMDMxMnYtNzYuOTM3NWgtNjcuMzIwMzEyYy00Ni43NzM0MzggMC04NS4wMzkwNjMgMzguMjY1NjI1LTg1LjAzOTA2MyA4NS4wMzUxNTZ2NjYuODE2NDA3aC02My4yNjk1MzF2NzYuOTM3NWg2My4yNjk1MzF2MTg3Ljc4OTA2MmgtMjQ0LjIyMjY1NmMtMTEgMC0yMC05LTIwLTIwdi00NTJjMC0xMSA5LTIwIDIwLTIwem0wIDAiIGZpbGw9IiM0MjY3YjIiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGQ9Im00MjYuNTc4MTI1IDc1LjQyMTg3NWgtNjcuMzIwMzEzYy01Mi40MDIzNDMgMC05NS4wMzUxNTYgNDIuNjMyODEzLTk1LjAzNTE1NiA5NS4wMzUxNTZ2NTYuODE2NDA3aC01My4yNzM0MzdjLTUuNTE5NTMxIDAtMTAgNC40NzY1NjItMTAgMTB2NzYuOTM3NWMwIDUuNTIzNDM3IDQuNDgwNDY5IDEwIDEwIDEwaDUzLjI3MzQzN3YxNjcuNzg5MDYyaC0yMzQuMjIyNjU2Yy01LjUxNTYyNSAwLTEwLTQuNDg0Mzc1LTEwLTEwdi00NTJjMC01LjUxNTYyNSA0LjQ4NDM3NS0xMCAxMC0xMGgyMGM1LjUyMzQzOCAwIDEwLTQuNDc2NTYyIDEwLTEwcy00LjQ3NjU2Mi0xMC0xMC0xMGgtMjBjLTE2LjU0Mjk2OSAwLTMwIDEzLjQ1NzAzMS0zMCAzMHY0NTJjMCAxNi41NDI5NjkgMTMuNDU3MDMxIDMwIDMwIDMwaDI0NC4yMjI2NTZjNS41MjM0MzggMCAxMC00LjQ3NjU2MiAxMC0xMHYtMTg3Ljc4OTA2MmMwLTUuNTIzNDM4LTQuNDc2NTYyLTEwLTEwLTEwaC01My4yNjk1MzF2LTU2Ljk0MTQwN2g1My4yNjk1MzFjNS41MjM0MzggMCAxMC00LjQ3NjU2MiAxMC0xMHYtNjYuODEyNWMwLTQxLjM3NSAzMy42NjAxNTYtNzUuMDM5MDYyIDc1LjAzOTA2My03NS4wMzkwNjJoNTcuMzIwMzEydjU2LjkzNzVoLTU3LjMyMDMxMmMtOS44MTI1IDAtMTguMTAxNTYzIDguMjg5MDYyLTE4LjEwMTU2MyAxOC4xMDE1NjJ2NjYuODEyNWMwIDUuNTIzNDM4IDQuNDc2NTYzIDEwIDEwIDEwaDY0LjAxOTUzMmwtNy40OTIxODggNTYuOTQxNDA3aC01Ni41MjczNDRjLTUuNTE5NTMxIDAtMTAgNC40NzY1NjItMTAgMTB2MTg3Ljc4OTA2MmMwIDUuNTIzNDM4IDQuNDgwNDY5IDEwIDEwIDEwaDMwLjgzOTg0NGM1LjUyMzQzOCAwIDEwLTQuNDc2NTYyIDEwLTEwcy00LjQ3NjU2Mi0xMC0xMC0xMGgtMjAuODM5ODQ0di0xNjcuNzg5MDYyaDU1LjI5Njg3NWM1LjAxOTUzMSAwIDkuMjYxNzE5LTMuNzIyNjU3IDkuOTE0MDYzLTguNjk1MzEzbDEwLjEyNS03Ni45NDE0MDZjLjM3NS0yLjg1MTU2My0uNDk2MDk0LTUuNzMwNDY5LTIuMzk0NTMyLTcuODk0NTMxLTEuODk4NDM3LTIuMTY3OTY5LTQuNjQwNjI0LTMuNDA2MjUtNy41MTk1MzEtMy40MDYyNWgtNjUuNDE3OTY5di01NC45MTQwNjNoNjUuNDE3OTY5YzUuNTIzNDM4IDAgMTAtNC40NzY1NjMgMTAtMTB2LTc2LjkzNzVjLS4wMDM5MDYtNS41MjM0MzctNC40ODA0NjktMTAtMTAuMDAzOTA2LTEwem0wIDAiLz48cGF0aCBkPSJtNDgyIDBoLTM1MmMtNS41MjM0MzggMC0xMCA0LjQ3NjU2Mi0xMCAxMHM0LjQ3NjU2MiAxMCAxMCAxMGgzNTJjNS41MTU2MjUgMCAxMCA0LjQ4NDM3NSAxMCAxMHY0NTJjMCA1LjUxNTYyNS00LjQ4NDM3NSAxMC0xMCAxMGgtMjBjLTUuNTIzNDM4IDAtMTAgNC40NzY1NjItMTAgMTBzNC40NzY1NjIgMTAgMTAgMTBoMjBjMTYuNTQyOTY5IDAgMzAtMTMuNDU3MDMxIDMwLTMwdi00NTJjMC0xNi41NDI5NjktMTMuNDU3MDMxLTMwLTMwLTMwem0wIDAiLz48cGF0aCBkPSJtNDIyLjAwMzkwNiA0OTJoLS4wMDc4MTJjLTUuNTIzNDM4IDAtOS45OTYwOTQgNC40NzY1NjItOS45OTYwOTQgMTBzNC40ODA0NjkgMTAgMTAuMDAzOTA2IDEwYzUuNTIzNDM4IDAgMTAtNC40NzY1NjIgMTAtMTBzLTQuNDc2NTYyLTEwLTEwLTEwem0wIDAiLz48cGF0aCBkPSJtOTAuMDAzOTA2IDIwYzUuNTIzNDM4IDAgMTAtNC40NzY1NjIgMTAtMTBzLTQuNDc2NTYyLTEwLTEwLTEwaC0uMDA3ODEyYy01LjUyMzQzOCAwLTkuOTk2MDk0IDQuNDc2NTYyLTkuOTk2MDk0IDEwczQuNDgwNDY5IDEwIDEwLjAwMzkwNiAxMHptMCAwIi8+PC9zdmc+" /><h4>Facebook</h4></center></div>
+			
+			</a>
+			<a href="https://www.Instagram.com">
+			<div class="column-4-lg column-12-xs column-4-sm column-4-md"><center><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItNDYuMDA0MSIgeTE9IjYzNC4xMjA4IiB4Mj0iLTMyLjkzMzQiIHkyPSI2NDcuMTkxNyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgzMiAwIDAgLTMyIDE1MTkgMjA3NTcpIj4NCgk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojRkZDMTA3Ii8+DQoJPHN0b3AgIG9mZnNldD0iMC41MDciIHN0eWxlPSJzdG9wLWNvbG9yOiNGNDQzMzYiLz4NCgk8c3RvcCAgb2Zmc2V0PSIwLjk5IiBzdHlsZT0ic3RvcC1jb2xvcjojOUMyN0IwIi8+DQo8L2xpbmVhckdyYWRpZW50Pg0KPHBhdGggc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8xXyk7IiBkPSJNMzUyLDBIMTYwQzcxLjY0OCwwLDAsNzEuNjQ4LDAsMTYwdjE5MmMwLDg4LjM1Miw3MS42NDgsMTYwLDE2MCwxNjBoMTkyDQoJYzg4LjM1MiwwLDE2MC03MS42NDgsMTYwLTE2MFYxNjBDNTEyLDcxLjY0OCw0NDAuMzUyLDAsMzUyLDB6IE00NjQsMzUyYzAsNjEuNzYtNTAuMjQsMTEyLTExMiwxMTJIMTYwYy02MS43NiwwLTExMi01MC4yNC0xMTItMTEyDQoJVjE2MEM0OCw5OC4yNCw5OC4yNCw0OCwxNjAsNDhoMTkyYzYxLjc2LDAsMTEyLDUwLjI0LDExMiwxMTJWMzUyeiIvPg0KPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8yXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItNDIuMjk3MSIgeTE9IjYzNy44Mjc5IiB4Mj0iLTM2LjY0MDQiIHkyPSI2NDMuNDg0NiIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgzMiAwIDAgLTMyIDE1MTkgMjA3NTcpIj4NCgk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojRkZDMTA3Ii8+DQoJPHN0b3AgIG9mZnNldD0iMC41MDciIHN0eWxlPSJzdG9wLWNvbG9yOiNGNDQzMzYiLz4NCgk8c3RvcCAgb2Zmc2V0PSIwLjk5IiBzdHlsZT0ic3RvcC1jb2xvcjojOUMyN0IwIi8+DQo8L2xpbmVhckdyYWRpZW50Pg0KPHBhdGggc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8yXyk7IiBkPSJNMjU2LDEyOGMtNzAuNjg4LDAtMTI4LDU3LjMxMi0xMjgsMTI4czU3LjMxMiwxMjgsMTI4LDEyOHMxMjgtNTcuMzEyLDEyOC0xMjgNCglTMzI2LjY4OCwxMjgsMjU2LDEyOHogTTI1NiwzMzZjLTQ0LjA5NiwwLTgwLTM1LjkwNC04MC04MGMwLTQ0LjEyOCwzNS45MDQtODAsODAtODBzODAsMzUuODcyLDgwLDgwDQoJQzMzNiwzMDAuMDk2LDMwMC4wOTYsMzM2LDI1NiwzMzZ6Ii8+DQo8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzNfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9Ii0zNS41NDU2IiB5MT0iNjQ0LjU3OTMiIHgyPSItMzQuNzkxOSIgeTI9IjY0NS4zMzMxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDMyIDAgMCAtMzIgMTUxOSAyMDc1NykiPg0KCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkMxMDciLz4NCgk8c3RvcCAgb2Zmc2V0PSIwLjUwNyIgc3R5bGU9InN0b3AtY29sb3I6I0Y0NDMzNiIvPg0KCTxzdG9wICBvZmZzZXQ9IjAuOTkiIHN0eWxlPSJzdG9wLWNvbG9yOiM5QzI3QjAiLz4NCjwvbGluZWFyR3JhZGllbnQ+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOnVybCgjU1ZHSURfM18pOyIgY3g9IjM5My42IiBjeT0iMTE4LjQiIHI9IjE3LjA1NiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" /><h4>Instagram</h4></center></div>
+			
+		</a>
+		
+		<a href="https://www.twitter.com">
+			<div class="column-4-lg column-12-xs column-4-sm column-4-md"><center><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6IzAzQTlGNDsiIGQ9Ik01MTIsOTcuMjQ4Yy0xOS4wNCw4LjM1Mi0zOS4zMjgsMTMuODg4LTYwLjQ4LDE2LjU3NmMyMS43Ni0xMi45OTIsMzguMzY4LTMzLjQwOCw0Ni4xNzYtNTguMDE2DQoJYy0yMC4yODgsMTIuMDk2LTQyLjY4OCwyMC42NC02Ni41NiwyNS40MDhDNDExLjg3Miw2MC43MDQsMzg0LjQxNiw0OCwzNTQuNDY0LDQ4Yy01OC4xMTIsMC0xMDQuODk2LDQ3LjE2OC0xMDQuODk2LDEwNC45OTINCgljMCw4LjMyLDAuNzA0LDE2LjMyLDIuNDMyLDIzLjkzNmMtODcuMjY0LTQuMjU2LTE2NC40OC00Ni4wOC0yMTYuMzUyLTEwOS43OTJjLTkuMDU2LDE1LjcxMi0xNC4zNjgsMzMuNjk2LTE0LjM2OCw1My4wNTYNCgljMCwzNi4zNTIsMTguNzIsNjguNTc2LDQ2LjYyNCw4Ny4yMzJjLTE2Ljg2NC0wLjMyLTMzLjQwOC01LjIxNi00Ny40MjQtMTIuOTI4YzAsMC4zMiwwLDAuNzM2LDAsMS4xNTINCgljMCw1MS4wMDgsMzYuMzg0LDkzLjM3Niw4NC4wOTYsMTAzLjEzNmMtOC41NDQsMi4zMzYtMTcuODU2LDMuNDU2LTI3LjUyLDMuNDU2Yy02LjcyLDAtMTMuNTA0LTAuMzg0LTE5Ljg3Mi0xLjc5Mg0KCWMxMy42LDQxLjU2OCw1Mi4xOTIsNzIuMTI4LDk4LjA4LDczLjEyYy0zNS43MTIsMjcuOTM2LTgxLjA1Niw0NC43NjgtMTMwLjE0NCw0NC43NjhjLTguNjA4LDAtMTYuODY0LTAuMzg0LTI1LjEyLTEuNDQNCglDNDYuNDk2LDQ0Ni44OCwxMDEuNiw0NjQsMTYxLjAyNCw0NjRjMTkzLjE1MiwwLDI5OC43NTItMTYwLDI5OC43NTItMjk4LjY4OGMwLTQuNjQtMC4xNi05LjEyLTAuMzg0LTEzLjU2OA0KCUM0ODAuMjI0LDEzNi45Niw0OTcuNzI4LDExOC40OTYsNTEyLDk3LjI0OHoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" /><h4>Twitter</h4></center></div>
+			</a>
+			</div>
+			<div class="fila">
+				<div id="copyright" class="column-12-lg column-12-xs column-12-sm column-12-md">&copy Todos los derechos reservados</div>
+		</div>
+	</footer>
+
+	<script src="js/funciones.js"></script>	
+</body>
+</html>
